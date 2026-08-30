@@ -16,7 +16,7 @@ import './App.css'
 
 const PHASES = ['setup', 'betting', 'locked', 'results']
 
-const LOCK_BETTING_SOUND_SRC = '/sounds/63753__rdb__atpost.mp3'
+const LOCK_BETTING_SOUND_SRC = `${import.meta.env.BASE_URL}sounds/63753__rdb__atpost.mp3`
 
 function playLockBettingSound() {
   try {
@@ -456,7 +456,7 @@ function App() {
         <div className="header-brand">
           <img
             className="header-logo"
-            src="/images/Backyard-Downs-LOGO.png"
+            src={`${import.meta.env.BASE_URL}images/Backyard-Downs-LOGO.png`}
             alt="Backyard Downs"
           />
         </div>
